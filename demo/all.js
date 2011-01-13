@@ -2,10 +2,10 @@
 
 if( typeof(require) !== 'undefined') {
   require('../lib/steel')
-    .add('../example/math')
-    .add('../example/string');
+    .add('../demo/math')
+    .add('../demo/string');
 } else {
   load('lib/steel.js')
-    .add('example/math')
-    .add('example/string');
+    .add('demo/math')
+    .add('demo/string');
 }
