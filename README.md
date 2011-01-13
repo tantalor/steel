@@ -13,6 +13,24 @@ JavaScript is primarily a browser-based scripting language, but is commonly used
  * [JavaScriptCore](http://webkit.org/projects/javascript/)
  * [RingoJS](http://ringojs.org/)
 
+## Example
+
+Add the following preamble and postamble to your QUnit tests.
+
+    // preamble
+    if (typeof require !== 'undefined') {
+      var QUnit = require('../lib/steel'); // commonjs
+    } else if (typeof(load) !== 'undefined') {
+      var QUnit = load('lib/steel.js'); // jsc
+    }
+    
+    with (QUnit) {
+      // your tests here
+    }
+    
+    // postamble
+    if (QUnit.run) QUnit.run(typeof exports !== 'undefined' ? exports : undefined);
+
 ## Demo
 
 You can run all tests.
