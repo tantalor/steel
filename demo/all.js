@@ -2,8 +2,11 @@
 
 if( typeof(require) !== 'undefined') {
   require('../lib/steel')
-    .add('../demo/math')
-    .add('../demo/string');
+    .suite([
+      '../demo/math',
+      '../demo/string',
+      '../demo/fail'
+    ]);
 } else {
   load('lib/steel.js')
     .add('demo/math')
