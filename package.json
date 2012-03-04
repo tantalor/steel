@@ -1,0 +1,25 @@
+{
+  "name": "steel",
+  "description": "QUnit-compatible test interface",
+  "version": "0.0.1",
+  "homepage": "http://github.johntantalo.com/steel/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tantalor/steel.git"
+  },
+  "author": {
+    "name": "John Tantalo",
+    "email": "john.tantalo@gmail.com",
+    "url": "http://johntantalo.com"
+  },
+  "main": "./lib/steel",
+  "directories": {
+    "lib": "./lib"
+  },
+  "engines": {
+    "node": "*",
+    "jsc": "*",
+    "narwhal": "*",
+    "ringo": "*"
+  }
+}
